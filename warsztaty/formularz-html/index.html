@@ -13,7 +13,7 @@
         <input type="radio" name="gender" value="male" id="male">
         <br>
         <label for="female">Kobieta</label>
-        <input type="radio" name="grnder" value="female" id="female">
+        <input type="radio" name="gender" value="female" id="female">
         <br>
 
         <label for="name">Imię</label>
@@ -29,18 +29,22 @@
         <br/>
 
         <label for="number">Numer telefonu</label>
-        <input type="text" name="number" id="number" />
+        <input type="text" name="number" id="number" pattern="" />
         <br/>
 
         <label for="massage">Wiadomość</label>
         <textarea maxlength="500" id="massage" name="massage"></textarea>
         <br/>
 
-        <select>
+        <label for="wojewodstwo">wybierz wojewodstwo</label>
+        <select id="wojewodstwo">
             <option value="slaskie">Śląskie</option>
             <option value="opolskie">Opolskie</option>
             <option value="malopolskie">Małopolskie</option>
         </select>
+        <br>
+
+
 
         <input type="submit" value="Submit">
 
