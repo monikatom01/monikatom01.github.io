@@ -91,3 +91,14 @@ header#header > h1.main-header-text {
     font-style: normal;
     text-decoration: none;
 }
+
+/*    Icons Style     */
+
+.icons {
+    color: blue;
+    padding: 20px;
+}
+div.icons > i {
+    padding-right: 50px;
+    padding-left: 50px;
+}
