@@ -1,3 +1,58 @@
-body {
-    background-color: darkblue;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
+
+form {
+    background-color: #213b50;
+    width: 50%;
+/*    height: 600px;*/
+    color: white;
+    padding: 10px;
+}
+
+form label {
+    display: block;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    background-color: #2b4a64;
+    border: 0;
+    width: 50%;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 25px;
+}
+
+form input:focus,
+form teztarea:focus {
+    background-color: #4e708c;
+    border: 1px solid #fff;
+}
+
+form textarea {
+    display: block;
+    height: 100px;  
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    background-color: lime;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+
