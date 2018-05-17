@@ -51,7 +51,17 @@ input[type="submit"] {
     color: #fff;
     text-transform: uppercase;
 }
+/*zeby wylaczyc strzalki w slelekcie :
 
+form select {
+-webkit-appearance: none;
+-moz-appearance: none;
+-o-appearance: none;
+-ms-appearance: none;
+appearance: none;
+}
+
+*/
 
 
 
