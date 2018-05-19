@@ -68,7 +68,7 @@
         background-image: url(../img/man-1.jpg);
         height: 50vh;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
     }
