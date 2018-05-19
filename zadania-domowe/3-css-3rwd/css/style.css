@@ -1,91 +1,97 @@
-@media all and (max-width: 5000px) {
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-div.background {
-    background-image: url(../img/man-1.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;    
-}
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
     
-header {
-    color: white;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    text-transform: uppercase;
-    margin-left: 30px;
-    background-position: center;
-}
-}
+    
+    div.background {
+        background-image: url(../img/man-1.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    header {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0 , -50%);
+        text-transform: uppercase;
+        margin-left: 30px;
+        background-position: center;
+    }
+
+
 
 
 @media all and (max-width: 1170px) {
 
-body {
-    text-align: center;
-}
+    body {
+        text-align: center;
+    }
 
-div.background {
-    background-image: url(../img/man-2.jpg);
-    display: inline-block;
-    height: 70vh;
-    width: 100vh;
-}
+    div.background {
+        background-image: url(../img/man-2.jpg);
+        display: inline-block;
+        height: 70vh;
+        width: 100vw;
+    }
 
-header {
-    top: 0;
-    width: 50%;
-    text-align: left;
-    right: 0;
-    font-size: 10hv;
-    padding-left: 10vh;
-    padding-top: 10vh;
-    box-sizing: border-box;
-}
+    header {
+        top: 0;
+        width: 50%;
+        text-align: left;
+        right: 0;
+        font-size: 10hv;
+        padding-left: 10vh;
+        padding-top: 10vh;
+        box-sizing: border-box;
+        transform: translate(0 ,0);
+    }
 
-h3 {
-    font-size: 2vh;
-}
+    h3 {
+        font-size: 2vh;
+    }
 
-h1 {
-    font-size: 3vh;
-}
+    h1 {
+        font-size: 3vh;
+    }
 }
 
 
 @media all and (max-width: 992px) {
 
-div.background {
-    background-image: url(../img/man-1.jpg);
-    height: 50vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
+    div.background {
+        background-image: url(../img/man-1.jpg);
+        height: 50vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+        top: 50vh;
+        padding-top: 5vh;
+        color: black;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 3vh;
+        margin-top: 10;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
 }
 
-header {
-    position: relative;
-    top: 50vh;
-    padding-top: 5vh;
-    color: black;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
 
-h3 {
-    font-size: 3vh;
-    margin-top: 10;  
-}
-
-h1 {
-    font-size: 5vh;
-}
-}
