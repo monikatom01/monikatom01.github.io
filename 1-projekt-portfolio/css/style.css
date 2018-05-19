@@ -1,0 +1,158 @@
+body {
+    font-family: "lato";
+    box-sizing: border-box;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+}
+
+nav.nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav.nav ul il {
+    line-height: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav.nav a {
+    text-decoration: none;
+    color: #1ac056;
+}
+
+#header {
+    background-image: url(../grafiki/img/header-background.jpg);
+    height: 100vh;
+    background-position: center;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+div.header {
+    position: absolute;
+    transform: translateY(50%);
+    top: 50%;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; 
+}
+
+div.header > h1, h2 {
+    font-weight: 100;
+    
+}
+
+section#about > h2 {
+    text-align: center;
+    
+}
+.about {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    text-align: center;
+
+}
+div.about > p {
+    text-align: left;
+    
+}
+
+div#about {
+    display: inline-block;
+}
+
+figure.about > img {
+    width: 50%;
+}
+
+section.skills {
+    clear: both;
+    text-align: center;
+}
+
+div#skills figure {
+    display: inline-block;
+}
+
+/*portfolio*/
+
+
+
+/*
+div.background img {
+    width: 30%;
+}
+*/
+
+div.background {
+    display: inline-block;
+    float: left;
+    width: 33.3333%;
+    background-position: center;
+    height: 300px;
+}
+
+div#p1 {
+    background-image: url(../grafiki/img/portfolio1.jpg);
+
+    
+}
+div#p2 {
+    background-image: url(../grafiki/img/portfolio2.jpg);
+
+}
+
+div#p3 {
+    background-image: url(../grafiki/img/portfolio3.jpg);
+
+
+}
+div.portfolio {
+    display: inline-block;
+    margin: auto;
+}
+section.portfolio {
+    text-align: center;
+}
+div#portfolio {
+    width: 80%;
+    display: inline-block;
+}
+
+div.mask {
+    display: inline-block;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+div.border {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+
+}
+
+div.content {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
