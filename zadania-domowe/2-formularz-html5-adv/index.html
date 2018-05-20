@@ -9,62 +9,43 @@
 
 <body>
 
-    <h1>A Simple Form</h1>
-
-    <h2>Form fundamentals</h2>
+    <header>
+        <h1>A Simple Form</h1>
+        <h3>Form fundamentals</h3>
+    </header>
 
     <form action="https://formspree.io/monikatom01@gmail.com" method="post" autocomplete="on">
 
-        <section id="top">
-
-            <h3>Customer info</h3>
-            
-            <article id="customer-info">
-
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-
-            <br />
-            <label for="telephone">Telephone:</label>
-            <input type="text" name="telephone" id="telephone" placeholder="Pattern 1-234-567-8910" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required>
-
-            <br />
-            <label for="name">Email Address:</label>
+        <fieldset>
+            <legend>Customer info:</legend>
+            <p>Name:</p> 
+            <input type="text" name="name" id="name" placeholder="Enter your name" required autofocus><br> 
+            <p>Telephone:</p>
+            <input type="text" name="telephone" id="telephone" placeholder="Pattern 1-234-567-8910" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required><br> 
+            <p>Email address:</p>
             <input type="text" name="email" id="email" placeholder="Enter your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-            
-            </article>
+        </fieldset>
 
-        </section>
+        <fieldset>
+            <legend>Books:</legend>
+            <p></p>
+            <input list="books" name="books">
+            <datalist id="books">
+                <option value="Book1">
+                <option value="Book2">
+                <option value="Book3">
+                <option value="Book4">
+                <option value="Book5">
+              </datalist>
 
-        <section id="bottom">
-
-            <h3>Books</h3>
-            
-            <article class="books">
-
-            <select id="books" name="books">
-                <option value="book1">book1</option>
-                <option value="book2">book2</option>
-                <option value="book3">book3</option>
-                <option value="book4">book4</option>
-                <option value="book5">book5</option>
-            </select>
-            
             <label for="quantity">Quantity (Maximum5)</label>
             <input type="number" name="quantity" id="quantity" min="1" max="5">
-
-
-            
-            </article>
-        </section>
-
-        <br />
-
+        </fieldset>
+        
         <input type="submit" value="submit" id="button">
 
     </form>
 
-    
 </body>
 
 </html>
