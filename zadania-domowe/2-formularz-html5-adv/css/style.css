@@ -43,9 +43,15 @@ h3 {
 #customer-info , #books {
     line-height: 300%;
 }
-
+article.books {
+    display: inline;
+    margin-bottom: 30px;
+}
+select#books {
+    margin-top: 15px;
+}
 #books {
-        display: inline;
+    display: inline;
     margin-bottom: 30px;
 }
 
