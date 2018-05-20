@@ -2,80 +2,86 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300i,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <nav class="nav">
+    <!--   navigacja   -->
+
+    <nav id="main-nav">
         <ul>
-            <il><a href="">o mnie</a></il>
-            <il><a href="">umiejętności</a></il>
-            <il><a href="">portfolio</a></il>
-            <il><a href="">kontakt</a></il>
+            <li><a href="">o mnie</a></li>
+            <li><a href="">umiejetności</a></li>
+            <li><a href="">portfolio</a></li>
+            <li><a href="">kontakt</a></li>
         </ul>
     </nav>
 
-   
-    <header id="header">
-        <div class="header">
-            <h1>Krystian Dziopa</h1>
+    <!--    header     -->
+
+    <header id="main-header">
+        <div class="inner-header">
+            <h1>Jan <span>Nowak</span></h1>
             <h2>Front-End Developer</h2>
         </div>
     </header>
 
-   
+    <!--   about        -->
+
     <section id="about">
-       
-        <h2>O mnie</h2>
-        
-        <figure class="about">
-            <img src="../1-projekt-portfolio/grafiki/img/jan-nowak.jpg" alt="Zdjecie Jana Nowaka">
+        <h2>
+            O <span>mnie</span>
+        </h2>
+        <figure class="about-inner">
+            <img src="../1-projekt-portfolio/grafiki/img/jan-nowak.jpg" alt="Jan nowak">
         </figure>
-        
-        <div class="about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptatem, labore soluta fugiat minus eum voluptatibus perferendis quam dicta, quaerat libero expedita facere velit dolorem! Eius consequuntur, ducimus voluptatem reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex beatae voluptatum molestias, fugiat molestiae laborum similique excepturi maiores facere nobis, error sunt tempore sint provident quaerat deserunt sapiente nulla.</p>
+        <div class="about-inner text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid perferendis a tenetur quibusdam magnam expedita, optio nisi vitae et unde eveniet necessitatibus, nulla error accusantium ducimus fuga quisquam architecto vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel, repudiandae similique quod explicabo non reprehenderit commodi eos eaque consequuntur odit architecto ratione reiciendis. Numquam culpa nostrum, sint adipisci perferendis.</p>
         </div>
-        
+        <div class="clear"></div>
+    </section>
+
+    <!--    skills     -->
+
+    <section id="skills">
+        <header>
+            <h2>Moje <span>umiejętności</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nam corporis consequatur accusantium, ad nulla nemo rerum quia quod debitis harum possimus, officiis qui ullam dolorum provident labore facilis delectus.</p>
+        </header>
+        <figure>
+            <img src="../1-projekt-portfolio/grafiki/icons/css3.png" alt="CSS">
+            <figcaption>css3</figcaption>
+        </figure>
+        <figure>
+            <img src="../1-projekt-portfolio/grafiki/icons/html5.png" alt="HTML5">
+            <figcaption>html5</figcaption>
+        </figure>
+        <figure>
+            <img src="../1-projekt-portfolio/grafiki/icons/jquery.png" alt="JQUERY">
+            <figcaption>jquery</figcaption>
+        </figure>
+        <figure>
+            <img src="../1-projekt-portfolio/grafiki/icons/js.png" alt="JS">
+            <figcaption>js</figcaption>
+        </figure>
     </section>
     
-    
-    <section class="skills">
-       
-        <h2>Moje miejętności</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias corrupti consequuntur reiciendis repudiandae inventore, harum nisi autem est iste at veniam culpa nesciunt ipsam earum nam sequi sint in laboriosam.</p>
-        <div id="skills">
-            <figure>
-                <img src="../1-projekt-portfolio/grafiki/icons/css3.png" alt="">
-                <figcaption>css</figcaption>
-            </figure>
-            <figure>
-                <img src="../1-projekt-portfolio/grafiki/icons/html5.png" alt="">
-                <figcaption>html5</figcaption>
-            </figure>
-            <figure>
-                <img src="../1-projekt-portfolio/grafiki/icons/jquery.png" alt="">
-                <figcaption>jquery</figcaption>
-            </figure>
-            <figure>
-                <img src="../1-projekt-portfolio/grafiki/icons/js.png" alt="">
-                <figcaption>js</figcaption>
-            </figure>
-        </div>
-    </section>
-    
-    
-    <section class="portfolio">
-       <h2>Moje portfolio</h2>
-        <div id="portfolio">
+<!--    portfolio     -->
+
+    <section id="portfolio">
+       <h2>Moje <span>portfolio</span></h2>
+        <div class="portfolio">
             <div class="background" id="p1">
                 <div class="mask">
                     <div class="border">
                         <div class="content">
+                            <h4>Lorem ipsum.</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt aspernatur earum necessitatibus modi vero illo porro laboriosam sint! Error earum obcaecati, ad natus eos aliquid, cumque architecto non! Dicta, similique.</p>
                         </div>
                     </div>
@@ -86,6 +92,7 @@
                 <div class="mask">
                     <div class="border">
                        <div class="content">
+                           <h4>Lorem ipsum.</h4>
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi atque quasi, labore fuga expedita deserunt ullam et dolores, voluptates porro similique rem laboriosam delectus ea placeat doloribus ducimus, maxime repellat.</p>
                        </div>
                         
@@ -97,6 +104,7 @@
                 <div class="mask">
                     <div class="border">
                        <div class="content">
+                               <h4>Lorem ipsum.</h4>
                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione cumque, porro est nulla delectus? Quo obcaecati hic laborum, tempora itaque, labore consectetur quae expedita earum facere enim, veniam cum placeat.</p>
                        </div>
                         
@@ -106,14 +114,43 @@
         </div>
     </section>
     
+<!--    kontakt    -->
     
-    <section>
-        <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illo consectetur necessitatibus nesciunt dicta alias doloremque perferendis veritatis. Perspiciatis eligendi nostrum deleniti ut aperiam fugit quidem temporibus, officiis non rerum!</address>
-        <form action="">
-            
-        </form>
+    <section id="contact">
+       
+        <h2>Jan <span>Nowak</span></h2>
+        <div class="address">
+            <address>
+                <p>ul. Mostowa 6/13 <br> 31-061 Kraków</p>
+                <p>tel: 606 74 57 59<br>e-mail 
+                <a href="example@example.pl">example@example.pl</a></p>
+                <div id="awesome">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="https://pl.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+               
+            </address>
+        </div>
+        <div class="form">
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Imię i Nazwisko"><br>
+                <input type="text" name="name" id="name" placeholder="E-mail"><br>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Treść wiadomości"></textarea><br>
+                <input id="button" type="submit" value="Wyślij">
+            </form>
+        </div>
     </section>
-
 
 </body>
 
