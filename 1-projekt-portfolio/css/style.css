@@ -1,22 +1,20 @@
-* {
-    box-sizing: border-box;
-}
+/*     helpers     */
 
 span {
-    color: #1ac056;
-    font-weight: 400;
+color: #1ac056;
+font-weight: 400;
 }
 
 section {
-    padding: 40px 50px;
+padding: 40px 50px;
 }
 
 section h2 {
-    font-weight: 300;
+font-weight: 300;
 }
 
 .clear {
-    clear: both;
+clear: both;
 }
 
 body {
@@ -25,10 +23,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 
 /*    navigacja    */
-
 nav#main-nav {
     position: fixed;
     top: 0;
@@ -69,7 +69,7 @@ header#main-header {
 
 div.inner-header {
     position: absolute;
-    transform: translate(0, -50%);
+    transform: translate(0 , -50%);
     top: 50%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -127,14 +127,14 @@ section#skills {
 section#skills figure {
     display: inline-block;
 }
-
-section#skills figure figcaption {
+section#skills figure figcaption {  
     text-transform: uppercase;
-
+ 
 }
 
 
 /*    portfolio   */
+
 
 section#portfolio {
     text-align: center;
@@ -142,9 +142,6 @@ section#portfolio {
 
 div.portfolio {
     width: 80%;
-/*    albo overflow: hidden albo clear do html */
-    
-/*    ten styl trzeba usunac */
     display: inline-block;
     margin-top: 15px;
 }
@@ -171,39 +168,47 @@ div#p3 {
 }
 
 div.mask {
-/*    width: 100%;*/
+    width: 100%;
     height: 100%;
-/*    display: inline-block;*/
+    display: inline-block;
     padding: 10px;
-/*    box-sizing: border-box;*/
+    box-sizing: border-box;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-    background-color: rgb(78, 92, 114, 0.7);
-    opacity: 0;
 }
 
 div.mask:hover {
-    opacity: 1;
-
+    background-color: rgb(78, 92, 114, 0.7);
+    
 }
 
 div.border {
     height: 100%;
+    width: 100%;
+/*    border: 1px solid white;*/
     position: relative;
-    border: 1px solid white;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+}
 
+div.border:hover {
+    border: 1px solid white;
+    
 }
 
 div.content {
+    height: 100%;
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
-/*    color: rgba(255, 255, 255, 0.0);*/
+    transform: translate(0 , -50%);
+    color: rgba(255, 255,255, 0.0);
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-    color: #FFF;
+}
+
+div.content:hover {
+    color: rgba(255, 255,255, 1);
+    
 }
 
 /*    kontakt    */
@@ -211,17 +216,19 @@ div.content {
 section#contact {
     background-color: #213B50;
     color: white;
-    overflow: hidden;    
-/*    albo overflow: hidden albo clear do html za ostatni element z float*/
+    height: 500px;
 }
-div.contact {
+
+div.address {
     width: 50%;
     display: inline-block;
     float: left;
 }
 
-/*dodac druga klase bo sie powtarza*/
-div.contact.form {
+div.form {
+    width: 50%;
+    display: inline-block;
+    float: left;
     text-align: right;
 }
 
@@ -233,37 +240,29 @@ address p {
 input {
     width: 100%;
     height: 50px;
-/*    margin moze byc w dol :) */   
-/*    uzupelnienie input przez padding */
-    margin-bottom: 10px;
-    padding-left: 10px;
+    margin: 10px;
     background-color: #495c7a;
     border-width: 0;
     color: lightgray;
 }
-
 textarea {
     width: 100%;
-/*    uzupelnienie textarea przez padding */
-    margin-bottom: 10px;
-    padding-left: 10px;
+    margin: 10px;
     background-color: #495c7a;
     border-width: 0;
-
+    
 }
 
 input#button {
     width: 100px;
     background-color: #1ac056;
     border: 1px solid white;
-    padding: 0;
-
+    
 }
 
 ::placeholder {
     color: lightgray;
 }
-
 div#awesome {
     font-size: 50px;
 }
@@ -275,6 +274,4 @@ address a {
 div#awesome a {
     color: white;
     margin-left: 5px;
-    float: left;
-    margin-right: 25px;
 }
