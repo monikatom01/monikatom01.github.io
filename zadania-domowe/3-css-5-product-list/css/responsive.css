@@ -1,0 +1,13 @@
+@media all and (max-width: 992px) {
+    div.background {
+  
+        width: 40%;
+
+}
+    
+@media all and (max-width: 480px) {
+    div.background {
+  
+        width: 90%;
+
+}   

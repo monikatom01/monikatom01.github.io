@@ -1,0 +1,59 @@
+body {
+    background-color: #98fb98;
+}
+
+section#page {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.background {
+	display: inline-block;
+	width: 23%;
+    height: 300px;
+	margin: 0;
+	margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#product1 {
+    background-image: url(../img/product-1.jpg);
+}
+
+#product2 {
+    background-image: url(../img/product-2.jpg);
+}
+
+#product3 {
+    background-image: url(../img/product-3.jpg);
+}
+
+#product4 {
+    background-image: url(../img/product-4.jpg);
+    margin-right: 0;
+}
+
+.mask {
+    background-color: rgba(255, 111, 0, 0.5);
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+p {
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    width: 100%;
+}
+
+div.mask:hover {
+    opacity: 1;}
