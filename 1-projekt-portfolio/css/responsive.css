@@ -1,0 +1,79 @@
+@media all and (max-width: 992px) {
+/* naw*/
+    
+    
+    
+    
+    #main-nav label {
+        display: block;
+        text-align: right;
+        line-height: 50px;
+        color: #1ac056;
+        
+    }
+    #main-nav ul {
+        display: none;
+    }
+    #rwdmenu:checked +ul {
+        display: block;
+    }
+
+    
+
+/*    about    */
+    
+    figure.about-inner {
+        width: 100%;
+        float: none;
+    }
+    figure.about-inner img {
+        width: 100%;
+    }
+    div.about-inner {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+/*    portfolio   */
+    
+    div.portfolio {
+        width: 100%;
+    }
+    div.background {
+        width: 100%;
+        float: none;
+    }
+/*    kontakt    */
+    
+    div.address {
+    width: 100%;
+    text-align: center;
+    }
+    
+    #awesome {
+        display: inline-block;
+    }
+    div.form {
+        width: 100%;
+    }
+    section#contact {
+        height: 800px;
+    }
+    section#contact h2 {
+        text-align: center;
+    }
+    div#awesome {
+        margin-bottom: 70px;
+
+    }
+    div#awesome a {
+        margin: 0 3vw;
+    }
+    
+/*    nav    */
+  
+    
+}
+
+
+    
