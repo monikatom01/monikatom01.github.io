@@ -1,11 +1,20 @@
 #header {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/header/pictures_on_the_wall.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/pictures_on_the_wall.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;
     text-align: center;
     position: relative;
     color: white;
+}
+
+a#nav-link,
+section#header h2,
+section#services > p,
+section#portfolio p,
+section#team h1 + p,
+section#contact p {
+    font-style: italic;
 }
 
 .b-g-color {
@@ -19,6 +28,7 @@
     transform: translateY(-50%);
 }
 
+a.nav-link,
 a#nav-link {
     color: white;
 }
@@ -27,44 +37,30 @@ ul#main-nav a.main-nav-link {
     color: white;
 }
 
-#header-button {
+#header-button,
+#contact-button {
     background-color: #0ed8d6;
     border: none;
     transition: all 0.4s;
 }
 
-#header-button:hover {
+#header-button:hover,
+#contact-button:hover {
     background-color: aqua;
 }
 
-/*
-nav#main-nav:hover {
-    background-color: #0ed8d6;
-}
-*/
-
 #services {
     text-align: center;
-    height: 100vh;
     padding-top: 100px;
 }
 
 #portfolio {
     text-align: center;
     background-color: #f7f7f7;
+    padding-top: 100px;
 }
-/*
-#portfolio p {
-    margin-bottom: 100px;
-}
-*/
 
 div.services i {
-/*    color: #0ed8d6;*/
-/*
-    font-size: 80px;
-    padding-bottom: 20px;
-*/
     background-color: #0ed8d6;
     border: 1px solid #0ed8d6;
     width: 50px;
@@ -74,7 +70,6 @@ div.services i {
     border-radius: 50%;
     color: #fff;
     transition: all 0.4s;
-    
 }
 
 div.services i:hover {
@@ -112,18 +107,14 @@ div.services i:hover {
 }
 
 .portfolio-inner {
-    height: 300px;
-/*
-    margin-bottom: 10px;
-    margin-top: 15px;
-*/
+    height: 100%;
     text-align: center;
     background-position: center;
     background-size: cover;
     color: white;
     font-size: 30px;
     transition: all 0.4s;
-    overflow: hidden;
+    line-height: 300px;
 }
 
 .portfolio-inner:hover {
@@ -133,38 +124,44 @@ div.services i:hover {
 .portfolio-midle {
     overflow: hidden;
     height: 300px;
-/*    background-color: white;*/
 }
 
-.portfolio{
-    text-align: center;  
-
-   
-}
-
-.portfolio-inner {
+.portfolio {
     text-align: center;
-    line-height: 300px;
-    height: 300px;
-   
-    
 }
 
 .mask {
-    height: 300px;
-    width: 100%;
+    height: 100%;
     transition: all 0.4s;
     color: rgba(255, 255, 255, 0);
 }
 
 .mask:hover {
     background-color: rgba(14, 216, 214, 0.6);
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
 }
-
 
 #team {
     text-align: center;
+    padding-top: 100px;
+}
+
+div.about i,
+div.footer-icons i {
+    background-color: #333333;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+div.about i:hover,
+div.footer-icons i:hover {
+    background-color: #0ed8d6;
+    color: #fff;
 }
 
 #member1 {
@@ -180,9 +177,36 @@ div.services i:hover {
 }
 
 .member-picture {
-    height: 300px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer/world-map.jpg);
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+input.contact {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+textarea.message {
+    height: 192px;
+}
+
+#contact-button {
+    margin-bottom: 100px;
+}
+
+#footer {
+    text-align: center;
+    line-height: 100px;
 }
