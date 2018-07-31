@@ -231,12 +231,18 @@ textarea.message {
     line-height: 70px;
 }
 
-div.footer-icons i {
-    width: 50px;
-    height: 50px;
+#footer p,
+div.line-height nav ul{
+    margin: 0;
 }
 
-/*fontas*/
+div.line-height nav ul li {
+    display: inline-block;
+}
+
+div.line-height nav ul li a {
+    color: black;
+}
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
