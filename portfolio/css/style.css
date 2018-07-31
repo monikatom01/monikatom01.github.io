@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
 #header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/pictures_on_the_wall.jpg);
     height: 100vh;
@@ -12,11 +16,17 @@ a#nav-link,
 section#header h2,
 section#services > p,
 section#portfolio p,
-section#team h1 + p,
+section#team h2 + p,
 section#contact p {
     font-style: italic;
 }
 
+section#services > p,
+section#portfolio p,
+section#team h2 + p,
+section#contact p {
+    padding-bottom: 50px;
+}
 .b-g-color {
     background-color: rgba(14, 216, 214, 0.6);
 }
@@ -28,25 +38,31 @@ section#contact p {
     transform: translateY(-50%);
 }
 
-a.nav-link,
+ul#main-nav a.main-nav-link,
 a#nav-link {
     color: white;
 }
 
-ul#main-nav a.main-nav-link {
-    color: white;
+ul#main-nav a.main-nav-link:hover,
+a#nav-link:hover {
+    color: aqua;
 }
 
 #header-button,
 #contact-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     background-color: #0ed8d6;
-    border: none;
+    border: 1px solid #0ed8d6;
+    font-family: 'Montserrat', sans-serif;
     transition: all 0.4s;
 }
 
 #header-button:hover,
 #contact-button:hover {
-    background-color: aqua;
+    background-color: white;
+    border: 1px solid #0ed8d6;
+    color: #0ed8d6;
 }
 
 #services {
@@ -146,6 +162,10 @@ div.services i:hover {
     padding-top: 100px;
 }
 
+section#team div+p {
+    padding: 50px;
+}
+
 div.about i,
 div.footer-icons i {
     background-color: #333333;
@@ -208,5 +228,17 @@ textarea.message {
 
 #footer {
     text-align: center;
-    line-height: 100px;
+    line-height: 70px;
+}
+
+div.footer-icons i {
+    width: 50px;
+    height: 50px;
+}
+
+/*fontas*/
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }

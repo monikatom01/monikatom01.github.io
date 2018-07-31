@@ -19,12 +19,3 @@ $(document).ready(function () {
     }
 })
 
-
-
-
-//
-//    $("#main-nav").hover(function () {
-//        $(this).css("background-color", "#0ed8d6");
-//    }, function () {
-//        $(this).css("background-color", " ");
-//    });
