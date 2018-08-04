@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    color: #291F1A;
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+section {
+    padding: 40px 50px;
+}
+
+section h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 300;
+}
+
+/*nav*/
+
+nav#main-nav ul li a {
+    color: #fff;
+}
+
+nav#main-nav ul li {
+    margin-right: 50px;
+}
+
+/*header*/
+
+header#main-header {
+    background-image: url(../grafiki/img/header-background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header#main-header div.inner-header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#main-header .inner-header h1,
+#main-header .inner-header h2 {
+    font-weight: 100;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-header .inner-header h1 {
+    font-size: 130px;
+}
+
+#main-header .inner-header h2 {
+    font-size: 50px;
+}
+
+/*about*/
+
+#about {
+    text-align: center;
+    background-color: #F9FCFE;
+}
+
+figure.about-inner img {
+    width: 60%;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+/*skills*/
+
+#inner-skills {
+    width: 60%;
+}
+
+section#skills header {
+    margin-bottom: 50px;
+}
+
+/*portfolio*/
+
+div.background {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio .container .row .col-md-4 {
+    padding: 0;
+}
+
+
+div#p1 {
+    background-image: url(../grafiki/img/portfolio1.jpg);
+}
+
+div#p2 {
+    background-image: url(../grafiki/img/portfolio2.jpg);
+}
+
+div#p3 {
+    background-image: url(../grafiki/img/portfolio3.jpg);
+}
+
+div.mask {
+    /*    width: 100%;*/
+    height: 100%;
+    /*    display: inline-block;*/
+    padding: 10px;
+    /*    box-sizing: border-box;*/
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgb(78, 92, 114, 0.7);
+    opacity: 0;
+}
+
+div.mask:hover {
+    opacity: 1;
+
+}
+
+div.border {
+    height: 100%;
+    position: relative;
+    border: 1px solid white;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+div.content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    color: #FFF;
+}
+
+/*contact*/
+
+section#contact {
+    background-color: #213B50;
+    color: white;
+}
+
+section#contact h2 {
+    margin-left: 60px;
+}
+
+div.contact.form {
+    text-align: right;
+}
+
+address p {
+    margin: 40px 0;
+    font-style: normal;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #495c7a;
+    border-width: 0;
+    color: lightgray;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #495c7a;
+    border-width: 0;
+}
+
+input#button {
+    width: 100px;
+    background-color: #1ac056;
+    border: 1px solid white;
+    padding: 0;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+div#awesome {
+    font-size: 50px;
+}
+
+address a {
+    color: #1ac056;
+}
+
+div#awesome a {
+    color: white;
+    margin-left: 5px;
+}
+footer {
+    background-color: #001a4d;
+}
+footer p {
+    margin: 0;
+    color: white;
+}
