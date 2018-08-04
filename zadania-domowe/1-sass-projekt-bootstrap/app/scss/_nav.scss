@@ -1,0 +1,17 @@
+#main-nav {
+    background-color: transparent;
+    transition: all 0.4s;
+    
+    a {
+        color: #fff;
+    }
+}
+
+#main-nav.change-color {
+    background-color: rgba(14, 216, 214, 0.6);
+
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}

@@ -1,0 +1,61 @@
+#portfolio {
+    background-color: #f7f7f7;
+
+    p {
+        font-style: italic;
+    }
+
+    .content {
+        background-color: #fff;
+
+        .overflow {
+            height: 300px;
+            overflow: hidden;
+
+            .image {
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all 0.4s;
+
+                .mask {
+                    height: 100%;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 32px;
+                    background-color: rgba(14, 216, 214, 0.6);
+                    opacity: 0;
+                    transition: all 0.4s;
+                }
+            }
+            .image.portfolio-image-1 {
+                background-image: url('../img/portfolio/box_of_cookies.jpg');
+            }
+            .image.portfolio-image-2 {
+                background-image: url('../img/portfolio/chaotic_paint.jpg');
+            }
+            .image.portfolio-image-3 {
+                background-image: url('../img/portfolio/chestnut_on_bracket.jpg');
+            }
+            .image.portfolio-image-4 {
+                background-image: url('../img/portfolio/child_with_blue_paint.jpg');
+            }
+            .image.portfolio-image-5 {
+                background-image: url('../img/portfolio/house_with_blue_doors.jpg');
+            }
+            .image.portfolio-image-6 {
+                background-image: url('../img/portfolio/typing_on_laptop.jpg');
+            }
+            .image:hover {
+                transform: scale(1.5);
+                .mask {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
